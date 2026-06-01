@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Parfum Laris Shopee 2026 - Semua Parfum Terbaik & Viral</title>
+<title>Parfum Laris Shopee 2026 - Sejarah Parfum & Produk Terlengkap</title>
 
-<meta name="description" content="Koleksi lengkap parfum laris Shopee 2026: parfum pria, wanita, unisex, parfum murah hingga premium viral.">
+<meta name="description" content="Koleksi parfum laris Shopee 2026 lengkap + sejarah parfum + rekomendasi parfum viral pria & wanita.">
 
 <style>
 
@@ -15,6 +15,7 @@ margin:0;
 font-family:Arial;
 background:linear-gradient(180deg,#f7f8ff,#ffffff,#fff0f5);
 color:#222;
+line-height:1.7;
 }
 
 header{
@@ -24,7 +25,6 @@ display:flex;
 padding:12px;
 background:#fff;
 border-bottom:1px solid #eee;
-z-index:10;
 }
 
 .logo{color:#8e44ad;font-weight:bold;}
@@ -35,10 +35,15 @@ padding:40px 20px;
 background:linear-gradient(135deg,#f3e5f5,#fff);
 }
 
-.section{max-width:1200px;margin:auto;padding:20px;}
+.section{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
 
 h2{color:#8e44ad}
 
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
@@ -50,10 +55,7 @@ background:#fff;
 border-radius:14px;
 overflow:hidden;
 box-shadow:0 10px 20px rgba(0,0,0,0.08);
-transition:0.2s;
 }
-
-.card:hover{transform:translateY(-5px);}
 
 .card img{
 width:100%;
@@ -61,9 +63,9 @@ height:140px;
 object-fit:cover;
 }
 
-.card-body{padding:10px;}
+.card-body{padding:10px}
 
-.price{color:#8e44ad;font-weight:bold;}
+.price{color:#8e44ad;font-weight:bold}
 
 .btn{
 display:block;
@@ -74,6 +76,15 @@ color:#fff;
 text-align:center;
 text-decoration:none;
 border-radius:10px;
+}
+
+/* ARTICLE */
+.article{
+background:#fff;
+padding:18px;
+border-radius:14px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+margin-bottom:20px;
 }
 
 </style>
@@ -87,12 +98,26 @@ border-radius:10px;
 
 <div class="hero">
 <h1>🌸 Parfum Laris Shopee 2026</h1>
-<p>Semua koleksi parfum viral & best seller</p>
+<p>Lengkap + Artikel + Produk Viral</p>
 </div>
 
 <div class="section">
 
-<h2>🔥 Semua Parfum Terlaris</h2>
+<h2>📜 Sejarah Parfum</h2>
+
+<div class="article">
+
+<p>Parfum berasal dari kata Latin <b>per fumum</b> yang berarti “melalui asap”. Sejarah parfum dimulai sejak ribuan tahun lalu di Mesir Kuno, sekitar 3000 tahun sebelum Masehi. Saat itu parfum digunakan dalam ritual keagamaan, pemujaan, dan pengawetan tubuh.</p>
+
+<p>Bangsa Mesir menggunakan campuran minyak alami dari bunga, rempah, dan resin untuk menciptakan aroma harum. Ratu Cleopatra dikenal sebagai salah satu tokoh yang sangat menyukai parfum dan menggunakannya untuk meningkatkan daya tariknya.</p>
+
+<p>Pada masa Yunani dan Romawi, parfum mulai digunakan dalam kehidupan sehari-hari seperti mandi, pakaian, dan rambut. Kemudian pada abad pertengahan, Prancis menjadi pusat perkembangan parfum dunia hingga saat ini.</p>
+
+<p>Di era modern, parfum dibuat menggunakan kombinasi ekstrak alami dan teknologi kimia sehingga menghasilkan aroma yang lebih tahan lama, variatif, dan elegan.</p>
+
+</div>
+
+<h2>🔥 Produk Parfum Laris Shopee</h2>
 
 <div class="grid" id="products"></div>
 
@@ -100,47 +125,24 @@ border-radius:10px;
 
 <script>
 
-/* ================= GAMBAR RANDOM ================= */
 const images=[
 "https://images.unsplash.com/photo-1541643600914-78b084683601",
 "https://images.unsplash.com/photo-1594035910387-fea47794261f",
-"https://images.unsplash.com/photo-1615634260167-c8cdede054de",
-"https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
-"https://images.unsplash.com/photo-1608571423902-eed4a5ad8108"
+"https://images.unsplash.com/photo-1615634260167-c8cdede054de"
 ];
 
-/* ================= FULL 100% PRODUK KAMU ================= */
 const products=[
 
-{"title":"Silvouette Men Lavanche Extrait 30ml","price":"Rp104.580","link":"https://s.shopee.co.id/1VwUQu2WeW"},
-{"title":"Parfum Kasturi Sholat Non Alkohol","price":"Rp69.300","link":"https://s.shopee.co.id/5fm3OahWaY"},
-{"title":"ZARA Man Silver Gold B1G1","price":"Rp107.186","link":"https://s.shopee.co.id/3B4iQ1mNt3"},
-{"title":"DEPHERO Mens Premium Original","price":"Rp139.000","link":"https://s.shopee.co.id/7pqXyeK3cW"},
-{"title":"Octarine Elixir Woody Fresh","price":"Rp77.500","link":"https://s.shopee.co.id/5fm3Oh5yqq"},
-{"title":"AEIRA Extrait Luxury 50ml","price":"Rp150.000","link":"https://s.shopee.co.id/2qRs1WSsoD"},
-{"title":"HEURA Scandal Women Sweet","price":"Rp77.787","link":"https://s.shopee.co.id/2LVbQdLSDY"},
-{"title":"Nagita Slavina Parfum Viral","price":"Rp10.850","link":"https://s.shopee.co.id/7fX7mSauHa"},
+{"title":"Silvouette Men Lavanche","price":"Rp104.580","link":"https://s.shopee.co.id/1VwUQu2WeW"},
+{"title":"Parfum Kasturi Non Alkohol","price":"Rp69.300","link":"https://s.shopee.co.id/5fm3OahWaY"},
+{"title":"ZARA Man B1G1","price":"Rp107.186","link":"https://s.shopee.co.id/3B4iQ1mNt3"},
+{"title":"DEPHERO Mens Premium","price":"Rp139.000","link":"https://s.shopee.co.id/7pqXyeK3cW"},
+{"title":"Octarine Woody Fresh","price":"Rp77.500","link":"https://s.shopee.co.id/5fm3Oh5yqq"},
+{"title":"AEIRA Luxury Extrait","price":"Rp150.000","link":"https://s.shopee.co.id/2qRs1WSsoD"},
+{"title":"HEURA Scandal Women","price":"Rp77.787","link":"https://s.shopee.co.id/2LVbQdLSDY"},
+{"title":"Nagita Slavina Viral","price":"Rp10.850","link":"https://s.shopee.co.id/7fX7mSauHa"},
 {"title":"Delina Maiden Premium","price":"Rp53.000","link":"https://s.shopee.co.id/7VDhaBHgtW"},
-{"title":"Hodl Scent Crypto Parfum","price":"Rp102.197","link":"https://s.shopee.co.id/8fPeyLm2k6"},
-
-{"title":"Bodibreze Leona Floral Rose","price":"Rp119.000","link":"https://s.shopee.co.id/40dpPo85Wi"},
-{"title":"Vanilla Caramel B1G3","price":"Rp39.000","link":"https://s.shopee.co.id/50WMbg92eH"},
-{"title":"Braven Barber Men 100ml","price":"Rp41.600","link":"https://s.shopee.co.id/7VDhaIkD9k"},
-{"title":"Jayrosse Parfum Pria Viral","price":"Rp39.900","link":"https://s.shopee.co.id/4qCwPR64Cg"},
-{"title":"Trix Scent Elegan Cowok","price":"Rp69.000","link":"https://s.shopee.co.id/17geaK5Hl"},
-{"title":"Eleganz Parfum Super Murah","price":"Rp9.900","link":"https://s.shopee.co.id/2qRs1ouoGP"},
-{"title":"SKNDL Karma Parfum Premium","price":"Rp99.000","link":"https://s.shopee.co.id/30lIE9KVt2"},
-{"title":"Dunhill Desire Blue Ori","price":"Rp101.850","link":"https://s.shopee.co.id/17gefwlIf"},
-{"title":"Cloud Baby Aroma Bayi","price":"Rp8.036","link":"https://s.shopee.co.id/W3xFeiizC"},
-{"title":"ZARA Red Vanilla Bundle","price":"Rp108.000","link":"https://s.shopee.co.id/2g8Rpf9PKS"},
-
-{"title":"Essentials Travel 20ml","price":"Rp13.998","link":"https://s.shopee.co.id/6py0nNEbhY"},
-{"title":"Bubble Gum Parfum Viral","price":"Rp10.500","link":"https://s.shopee.co.id/gNNS5Eb7R"},
-{"title":"Grey Natural Bundle 4in1","price":"Rp30.000","link":"https://s.shopee.co.id/20sl2ZHVtD"},
-{"title":"Sayyida Non Alcohol 35ml","price":"Rp10.384","link":"https://s.shopee.co.id/1qZKqIYwGg"},
-{"title":"Braven Oud Wood 100ml","price":"Rp41.800","link":"https://s.shopee.co.id/6AiK0JYYQI"},
-{"title":"Kasturi Arab Original","price":"Rp11.662","link":"https://s.shopee.co.id/1qZKqQBMI5"},
-{"title":"FirdhaBeauty Halal Parfum","price":"Rp35.000","link":"https://s.shopee.co.id/7pqXzVOygP"}
+{"title":"Hodl Scent Crypto","price":"Rp102.197","link":"https://s.shopee.co.id/8fPeyLm2k6"}
 
 ];
 
